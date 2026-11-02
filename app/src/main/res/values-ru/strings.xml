@@ -1,0 +1,216 @@
+<resources>
+    <string name="app_name">AI-словарь</string>
+
+    <!-- Common actions -->
+    <string name="action_back">Назад</string>
+    <string name="action_cancel">Отмена</string>
+    <string name="action_clear">Очистить</string>
+    <string name="action_delete">Удалить</string>
+    <string name="action_undo">Отменить</string>
+    <string name="action_retry">Повторить</string>
+    <string name="action_dismiss">Закрыть</string>
+    <string name="action_save">Сохранить</string>
+
+    <!-- Languages -->
+    <string name="lang_en">Английский</string>
+    <string name="lang_ru">Русский</string>
+    <string name="lang_tk">Туркменский</string>
+
+    <!-- Home -->
+    <string name="home_title">Мой словарь</string>
+    <string name="home_open_settings">Настройки</string>
+    <string name="home_start_exam">Начать экзамен</string>
+    <string name="home_continue_exam">Продолжить экзамен</string>
+    <plurals name="home_words_due">
+        <item quantity="one">%1$d слово к повторению</item>
+        <item quantity="few">%1$d слова к повторению</item>
+        <item quantity="many">%1$d слов к повторению</item>
+        <item quantity="other">%1$d слова к повторению</item>
+    </plurals>
+    <string name="home_search_hint">Найти или добавить слово</string>
+    <string name="home_ask_ai">Спросить AI: «%1$s»</string>
+    <string name="home_sort_label">Сортировка</string>
+    <string name="home_sort_date">По дате</string>
+    <string name="home_sort_alphabet">По алфавиту</string>
+    <string name="home_sort_weakest">Сначала слабые</string>
+    <string name="home_empty_title">Ваш словарь пуст</string>
+    <string name="home_empty_hint">Добавляйте слова, которые встречаете и не знаете — введите слово выше и попросите AI объяснить его.</string>
+    <string name="home_added_to_queue">«%1$s» сохранено — объясним, когда появится сеть</string>
+    <string name="home_deleted">Удалено «%1$s»</string>
+
+    <!-- Dedup dialog -->
+    <string name="dedup_title">Уже сохранено</string>
+    <string name="dedup_message">«%1$s» уже есть в вашем словаре.</string>
+    <string name="dedup_open_saved">Открыть сохранённое</string>
+    <string name="dedup_ask_again">Спросить заново</string>
+
+    <!-- No API key dialog -->
+    <string name="no_api_key_title">Нет API-ключа</string>
+    <string name="no_api_key_message">Добавьте свой API-ключ Anthropic в настройках, чтобы объяснять слова через AI.</string>
+    <string name="no_api_key_open_settings">Открыть настройки</string>
+
+    <!-- Add error dialog -->
+    <string name="add_error_title">Не удалось объяснить слово</string>
+
+    <!-- Text-selection lookup card (F-5) -->
+    <string name="action_lookup">Объяснить</string>
+    <string name="lookup_loading">Ищем…</string>
+    <string name="lookup_sentence_hint">Нажмите на слово, чтобы найти его</string>
+    <string name="lookup_open_in_app">Открыть в приложении</string>
+    <string name="lookup_close">Закрыть</string>
+
+    <!-- Screenshot share + annotate + OCR (F-6) -->
+    <string name="annotate_hint">Обведите слово</string>
+    <string name="annotate_confirm">Найти</string>
+    <string name="annotate_back_to_editor">Назад к редактору</string>
+    <string name="ocr_word_picker_hint">Нажмите на слово, чтобы найти его</string>
+    <string name="word_image_thumbnail">Фрагмент скриншота</string>
+    <string name="error_image_unsupported">Не удалось открыть это изображение.</string>
+    <string name="error_image_too_large">Это изображение слишком большое для обработки.</string>
+    <string name="error_ocr_and_ai_failed">Не удалось распознать слово на изображении.</string>
+
+    <!-- AI errors -->
+    <string name="error_no_api_key">API-ключ не настроен.</string>
+    <string name="error_network">Ошибка сети. Проверьте подключение и попробуйте снова.</string>
+    <string name="error_rate_limited">Слишком много запросов. Подождите немного и повторите.</string>
+    <string name="error_invalid_key">API-ключ недействителен.</string>
+    <string name="error_invalid_response">AI вернул неожиданный ответ.</string>
+    <string name="error_unknown">Что-то пошло не так. Попробуйте ещё раз.</string>
+
+    <!-- Word card -->
+    <string name="word_title_fallback">Слово</string>
+    <string name="word_not_found">Слово не найдено.</string>
+    <string name="word_refresh">Обновить через AI</string>
+    <string name="word_edit">Изменить</string>
+    <string name="word_delete">Удалить</string>
+    <string name="word_explanation_label">Объяснение</string>
+    <string name="word_translations_label">Переводы</string>
+    <string name="word_examples_label">Примеры</string>
+    <string name="word_synonyms_label">Синонимы</string>
+    <string name="word_common_mistake_label">Частая ошибка</string>
+    <string name="word_context_label">Контекст</string>
+    <string name="word_delete_confirm_title">Удалить это слово?</string>
+    <string name="word_delete_confirm_message">Слово будет удалено из вашего словаря.</string>
+    <string name="word_edit_title">Изменить слово</string>
+    <string name="word_edit_explanation">Объяснение (английский)</string>
+    <string name="word_edit_translation_ru">Русский перевод</string>
+    <string name="word_edit_translation_tk">Туркменский перевод</string>
+    <string name="word_speak_term">Произнести слово</string>
+    <string name="word_speak_example">Произнести пример</string>
+
+    <!-- Settings -->
+    <string name="settings_title">Настройки</string>
+    <string name="settings_api_key_label">API-ключ Anthropic</string>
+    <string name="settings_api_key_show">Показать</string>
+    <string name="settings_api_key_hide">Скрыть</string>
+    <string name="settings_check_key">Проверить</string>
+    <string name="settings_check_ok">Ключ работает</string>
+    <string name="settings_native_lang_label">Родной язык (показывать первым)</string>
+    <string name="settings_interface_lang">Язык интерфейса</string>
+    <string name="settings_interface_lang_system">Как в системе</string>
+
+    <!-- Screenshot watcher (F-6, task 10) -->
+    <string name="settings_screenshot_watcher_title">Наблюдатель скриншотов</string>
+    <string name="settings_screenshot_watcher_summary">Показывать пузырь-карандаш после снимка экрана, чтобы добавить из него слово.</string>
+    <string name="screenshot_onboarding_intro_title">Наблюдатель скриншотов</string>
+    <string name="screenshot_onboarding_intro_message">Когда вы делаете скриншот в любом приложении, появляется маленький пузырь-карандаш. Нажмите на него, чтобы обвести слово и добавить его в словарь. Для этого на следующих экранах понадобится несколько разрешений.</string>
+    <string name="screenshot_onboarding_continue">Продолжить</string>
+    <string name="screenshot_onboarding_cancel">Отмена</string>
+    <string name="screenshot_perm_media_rationale_title">Доступ к скриншотам</string>
+    <string name="screenshot_perm_media_rationale_message">Наблюдателю нужно читать ваши фото, чтобы находить новые скриншоты. Разрешите доступ ко всем фото.</string>
+    <string name="screenshot_perm_media_partial_title">Нужен полный доступ</string>
+    <string name="screenshot_perm_media_partial_message">Вы разрешили доступ только к выбранным фото. Так наблюдатель не сможет находить новые скриншоты — разрешите доступ ко всем фото, иначе функция останется выключенной.</string>
+    <string name="screenshot_perm_overlay_rationale_title">Поверх других приложений</string>
+    <string name="screenshot_perm_overlay_rationale_message">Чтобы показывать пузырь поверх других приложений, разрешите «Поверх других приложений» на следующем экране.</string>
+    <string name="screenshot_perm_overlay_open_settings">Открыть настройки</string>
+    <string name="screenshot_perm_notifications_rationale_title">Показ уведомления</string>
+    <string name="screenshot_perm_notifications_rationale_message">Наблюдатель работает как foreground-сервис и должен показывать постоянное уведомление. Разрешите уведомления.</string>
+    <string name="screenshot_perm_denied_title">Нужно разрешение</string>
+    <string name="screenshot_perm_denied_message">Без этого разрешения наблюдатель скриншотов не работает, поэтому он остаётся выключенным. Вы можете включить его в любой момент.</string>
+    <string name="screenshot_service_notification_channel">Наблюдатель скриншотов</string>
+    <string name="screenshot_service_notification_title">Наблюдатель скриншотов включён</string>
+    <string name="screenshot_service_notification_text">Отслеживаю новые скриншоты.</string>
+    <string name="screenshot_service_notification_stop">Остановить</string>
+    <string name="screenshot_bubble_content_description">Добавить слово с этого скриншота</string>
+
+    <!-- Offline queue notification -->
+    <string name="pending_notification_channel">Объяснённые слова</string>
+    <string name="pending_notification_title">Слово объяснено</string>
+    <string name="pending_notification_text">«%1$s» готово в вашем словаре.</string>
+
+    <!-- Exam setup (F-3.1) -->
+    <string name="exam_setup_title">Настройка экзамена</string>
+    <string name="exam_setup_start">Начать экзамен</string>
+    <string name="exam_setup_preparing">Подготовка…</string>
+    <string name="exam_setup_count_label">Количество вопросов</string>
+    <string name="exam_setup_count_all">Все</string>
+    <string name="exam_setup_scope_label">Охват слов</string>
+    <string name="exam_setup_scope_all">Все</string>
+    <string name="exam_setup_scope_week">За последнюю неделю</string>
+    <string name="exam_setup_scope_weak">Слабые</string>
+    <string name="exam_setup_scope_due">К повторению</string>
+    <string name="exam_setup_include_mastered">Включить выученные слова</string>
+
+    <!-- Exam runner (F-3.3) -->
+    <string name="exam_progress">%1$d из %2$d</string>
+    <string name="exam_next">Далее</string>
+    <string name="exam_finish_short">Готово</string>
+    <string name="exam_finish">Завершить экзамен</string>
+    <string name="exam_correct">Верно</string>
+    <string name="exam_wrong">Неверно</string>
+    <string name="exam_check">Проверить</string>
+    <string name="exam_audio_play">Воспроизвести</string>
+    <string name="exam_scramble_hint">Нажимайте на буквы, чтобы собрать слово.</string>
+    <string name="exam_scramble_clear">Очистить</string>
+    <string name="exam_empty">Пока нет слов для экзамена.</string>
+    <string name="exam_offline">Офлайн-экзамен — только локальные вопросы.</string>
+    <string name="exam_exit_title">Выйти из экзамена?</string>
+    <string name="exam_exit_message">Ваш прогресс сохранён. Вы можете продолжить позже.</string>
+    <string name="exam_exit_confirm">Выйти</string>
+    <string name="exam_exit_cancel">Остаться</string>
+
+    <!-- Exam result (F-3.4) -->
+    <string name="exam_result_title">Результат экзамена</string>
+    <string name="exam_result_score">%1$d / %2$d (%3$d%%)</string>
+    <string name="exam_result_mistakes">Ошибки</string>
+    <string name="exam_result_no_mistakes">Без ошибок — отличная работа!</string>
+    <string name="exam_result_your_answer">Ваш ответ: %1$s</string>
+    <string name="exam_result_correct_answer">Правильно: %1$s</string>
+    <string name="exam_result_again">Ещё экзамен</string>
+    <string name="exam_result_home">На главную</string>
+    <string name="exam_result_done">Готово</string>
+
+    <!-- Open-answer exam item (F-4) -->
+    <string name="exam_open_prompt">Составьте предложение со словом «%1$s».</string>
+    <string name="exam_check_failed">Не удалось проверить ответ — проверьте соединение.</string>
+    <string name="exam_skip">Пропустить задание</string>
+    <string name="exam_open_ok">Верно</string>
+    <string name="exam_open_minor">Верно, с небольшим замечанием</string>
+    <string name="exam_open_wrong">Не совсем</string>
+    <string name="exam_open_corrected">Вариант: %1$s</string>
+    <string name="exam_open_skipped">Задание пропущено.</string>
+
+    <!-- Export / import (F-7) -->
+    <string name="settings_backup_section">Экспорт / импорт</string>
+    <string name="settings_backup_summary">Сохраните словарь в JSON-файл или восстановите его. Обрезанные изображения не включаются.</string>
+    <string name="settings_export">Экспорт данных</string>
+    <string name="settings_import">Импорт данных</string>
+    <string name="settings_export_done">Данные экспортированы.</string>
+    <string name="settings_import_report">Импортировано %1$d, пропущено %2$d.</string>
+    <string name="settings_import_unsupported">Файл создан более новой версией приложения.</string>
+    <string name="settings_import_invalid">Это не корректный файл резервной копии.</string>
+    <string name="settings_backup_error">Что-то пошло не так.</string>
+
+    <!-- AI usage counter (§10) -->
+    <string name="settings_usage_section">Расход AI</string>
+    <string name="settings_usage_month">За этот месяц</string>
+    <string name="settings_usage_total">Всего</string>
+    <string name="settings_usage_requests">Запросов: %1$d</string>
+    <string name="settings_usage_tokens">Токенов: %1$d</string>
+    <string name="settings_usage_type_article">Статьи</string>
+    <string name="settings_usage_type_quiz">Квизы</string>
+    <string name="settings_usage_type_vision">Зрение</string>
+    <string name="settings_usage_type_check">Проверки ответов</string>
+    <string name="settings_usage_hint">Только сырые числа — стоимость см. в тарифах Anthropic.</string>
+    <string name="settings_usage_reset">Сбросить счётчики</string>
+</resources>

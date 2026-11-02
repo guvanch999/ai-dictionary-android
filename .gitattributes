@@ -1,0 +1,10 @@
+* text=auto
+
+# Unix scripts must keep LF; Windows scripts keep CRLF.
+gradlew text eol=lf
+*.sh text eol=lf
+*.bat text eol=crlf
+
+*.jar binary
+*.png binary
+*.webp binary

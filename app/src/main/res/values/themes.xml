@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base window theme; the actual UI is drawn by Compose (AiDictionaryTheme). -->
+    <style name="Theme.AiDictionary" parent="Theme.Material3.DayNight.NoActionBar" />
+
+    <!-- Transparent overlay theme for the PROCESS_TEXT lookup card (spec F-5). -->
+    <style name="Theme.AiDictionary.Transparent" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <!-- Launch theme: shows the system splash, then hands off to the base theme. -->
+    <style name="Theme.AiDictionary.Splash" parent="Theme.SplashScreen">
+        <item name="windowSplashScreenBackground">@color/splash_background</item>
+        <item name="windowSplashScreenAnimatedIcon">@mipmap/ic_launcher</item>
+        <item name="postSplashScreenTheme">@style/Theme.AiDictionary</item>
+    </style>
+</resources>

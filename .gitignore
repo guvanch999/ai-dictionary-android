@@ -1,0 +1,36 @@
+# Gradle / Kotlin
+.gradle/
+.kotlin/
+build/
+/captures
+.externalNativeBuild
+.cxx/
+
+# Local configuration (SDK path, secrets)
+local.properties
+*.env
+secrets.properties
+keystore.properties
+
+# Signing
+*.jks
+*.keystore
+*.p12
+
+# Firebase / Google services config
+google-services.json
+
+# IDE
+.idea/
+*.iml
+.DS_Store
+Thumbs.db
+
+# Logs / profiling
+*.log
+*.hprof
+
+# Personal AI-tooling files (kept locally, not part of the public repo)
+CLAUDE.md
+.claude/
+00-README.md

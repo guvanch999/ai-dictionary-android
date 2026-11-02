@@ -1,0 +1,214 @@
+<resources>
+    <string name="app_name">AI sözlük</string>
+
+    <!-- Common actions -->
+    <string name="action_back">Yza</string>
+    <string name="action_cancel">Ýatyr</string>
+    <string name="action_clear">Arassala</string>
+    <string name="action_delete">Poz</string>
+    <string name="action_undo">Yzyna al</string>
+    <string name="action_retry">Gaýtala</string>
+    <string name="action_dismiss">Ýap</string>
+    <string name="action_save">Sakla</string>
+
+    <!-- Languages -->
+    <string name="lang_en">Iňlisçe</string>
+    <string name="lang_ru">Rusça</string>
+    <string name="lang_tk">Türkmençe</string>
+
+    <!-- Home -->
+    <string name="home_title">Meniň sözlügim</string>
+    <string name="home_open_settings">Sazlamalar</string>
+    <string name="home_start_exam">Synaga başla</string>
+    <string name="home_continue_exam">Synagy dowam et</string>
+    <plurals name="home_words_due">
+        <item quantity="one">gaýtalamak üçin %1$d söz</item>
+        <item quantity="other">gaýtalamak üçin %1$d söz</item>
+    </plurals>
+    <string name="home_search_hint">Söz gözle ýa-da goş</string>
+    <string name="home_ask_ai">AI-dan sora: «%1$s»</string>
+    <string name="home_sort_label">Tertiple</string>
+    <string name="home_sort_date">Sene boýunça</string>
+    <string name="home_sort_alphabet">Elipbiý boýunça</string>
+    <string name="home_sort_weakest">Ilki gowşaklar</string>
+    <string name="home_empty_title">Sözlügiňiz boş</string>
+    <string name="home_empty_hint">Duş gelen we bilmeýän sözleriňizi goşuň — ýokarda söz ýazyň we AI-dan düşündirmegini soraň.</string>
+    <string name="home_added_to_queue">«%1$s» saklandy — internet bolanda düşündiriler</string>
+    <string name="home_deleted">«%1$s» pozuldy</string>
+
+    <!-- Dedup dialog -->
+    <string name="dedup_title">Eýýäm saklanan</string>
+    <string name="dedup_message">«%1$s» eýýäm sözlügiňizde bar.</string>
+    <string name="dedup_open_saved">Saklananyny aç</string>
+    <string name="dedup_ask_again">Täzeden sora</string>
+
+    <!-- No API key dialog -->
+    <string name="no_api_key_title">API açary ýok</string>
+    <string name="no_api_key_message">Sözleri AI bilen düşündirmek üçin Sazlamalarda Anthropic API açaryňyzy goşuň.</string>
+    <string name="no_api_key_open_settings">Sazlamalary aç</string>
+
+    <!-- Add error dialog -->
+    <string name="add_error_title">Sözi düşündirip bolmady</string>
+
+    <!-- Text-selection lookup card (F-5) -->
+    <string name="action_lookup">Düşündir</string>
+    <string name="lookup_loading">Gözlenýär…</string>
+    <string name="lookup_sentence_hint">Sözi gözlemek üçin üstüne basyň</string>
+    <string name="lookup_open_in_app">Programmada aç</string>
+    <string name="lookup_close">Ýap</string>
+
+    <!-- Screenshot share + annotate + OCR (F-6) -->
+    <string name="annotate_hint">Sözüň üstüni çyzyň</string>
+    <string name="annotate_confirm">Gözle</string>
+    <string name="annotate_back_to_editor">Redaktora dolan</string>
+    <string name="ocr_word_picker_hint">Gözlemek üçin söze basyň</string>
+    <string name="word_image_thumbnail">Skrinşot bölegi</string>
+    <string name="error_image_unsupported">Bu suraty açyp bolmady.</string>
+    <string name="error_image_too_large">Bu surat işlemek üçin gaty uly.</string>
+    <string name="error_ocr_and_ai_failed">Suratdaky sözi okap bolmady.</string>
+
+    <!-- AI errors -->
+    <string name="error_no_api_key">API açary sazlanmadyk.</string>
+    <string name="error_network">Tor ýalňyşlygy. Birikmäni barlaň we täzeden synanyşyň.</string>
+    <string name="error_rate_limited">Örän köp sorag. Biraz garaşyň we gaýtalaň.</string>
+    <string name="error_invalid_key">API açary nädogry.</string>
+    <string name="error_invalid_response">AI garaşylmadyk jogap gaýtardy.</string>
+    <string name="error_unknown">Bir zat ýalňyş boldy. Täzeden synanyşyň.</string>
+
+    <!-- Word card -->
+    <string name="word_title_fallback">Söz</string>
+    <string name="word_not_found">Söz tapylmady.</string>
+    <string name="word_refresh">AI arkaly täzele</string>
+    <string name="word_edit">Üýtget</string>
+    <string name="word_delete">Poz</string>
+    <string name="word_explanation_label">Düşündiriş</string>
+    <string name="word_translations_label">Terjimeler</string>
+    <string name="word_examples_label">Mysallar</string>
+    <string name="word_synonyms_label">Sinonimler</string>
+    <string name="word_common_mistake_label">Ýygy ýalňyşlyk</string>
+    <string name="word_context_label">Kontekst</string>
+    <string name="word_delete_confirm_title">Bu söz pozulsynmy?</string>
+    <string name="word_delete_confirm_message">Bu söz sözlügiňizden aýrylar.</string>
+    <string name="word_edit_title">Sözi üýtget</string>
+    <string name="word_edit_explanation">Düşündiriş (iňlisçe)</string>
+    <string name="word_edit_translation_ru">Rusça terjime</string>
+    <string name="word_edit_translation_tk">Türkmençe terjime</string>
+    <string name="word_speak_term">Sözi seslendir</string>
+    <string name="word_speak_example">Mysaly seslendir</string>
+
+    <!-- Settings -->
+    <string name="settings_title">Sazlamalar</string>
+    <string name="settings_api_key_label">Anthropic API açary</string>
+    <string name="settings_api_key_show">Görkez</string>
+    <string name="settings_api_key_hide">Gizle</string>
+    <string name="settings_check_key">Barla</string>
+    <string name="settings_check_ok">Açar işleýär</string>
+    <string name="settings_native_lang_label">Ene dili (ilki görkeziler)</string>
+    <string name="settings_interface_lang">Interfeýs dili</string>
+    <string name="settings_interface_lang_system">Ulgamdaky ýaly</string>
+
+    <!-- Screenshot watcher (F-6, task 10) -->
+    <string name="settings_screenshot_watcher_title">Skrinşot gözegçisi</string>
+    <string name="settings_screenshot_watcher_summary">Skrinşot alanyňyzdan soň galam pufini görkez, ondan söz goşup bilersiňiz.</string>
+    <string name="screenshot_onboarding_intro_title">Skrinşot gözegçisi</string>
+    <string name="screenshot_onboarding_intro_message">Islendik programmada skrinşot alanyňyzda kiçijik galam pufi peýda bolýar. Söze aýlaw çyzyp ony sözlügiňize goşmak üçin oňa basyň. Munuň üçin indiki ekranlarda birnäçe rugsat gerek bolar.</string>
+    <string name="screenshot_onboarding_continue">Dowam et</string>
+    <string name="screenshot_onboarding_cancel">Ýatyr</string>
+    <string name="screenshot_perm_media_rationale_title">Skrinşotlara rugsat</string>
+    <string name="screenshot_perm_media_rationale_message">Gözegçi täze skrinşotlary tapmak üçin suratlaryňyzy okamaly. Ähli suratlara rugsat beriň.</string>
+    <string name="screenshot_perm_media_partial_title">Doly rugsat gerek</string>
+    <string name="screenshot_perm_media_partial_message">Siz diňe saýlanan suratlara rugsat berdiňiz. Beýle ýagdaýda gözegçi täze skrinşotlary tapyp bilmez — ähli suratlara rugsat beriň, ýogsam bu aýratynlyk öçük galar.</string>
+    <string name="screenshot_perm_overlay_rationale_title">Beýleki programmalaryň üstünde</string>
+    <string name="screenshot_perm_overlay_rationale_message">Pufi beýleki programmalaryň üstünde görkezmek üçin indiki ekranda «Beýleki programmalaryň üstünde görkez» rugsadyny beriň.</string>
+    <string name="screenshot_perm_overlay_open_settings">Sazlamalary aç</string>
+    <string name="screenshot_perm_notifications_rationale_title">Bildiriş görkezmek</string>
+    <string name="screenshot_perm_notifications_rationale_message">Gözegçi foreground hyzmat hökmünde işleýär we hemişelik bildiriş görkezmeli. Bildirişlere rugsat beriň.</string>
+    <string name="screenshot_perm_denied_title">Rugsat gerek</string>
+    <string name="screenshot_perm_denied_message">Bu rugsat bolmasa skrinşot gözegçisi işlemeýär, şonuň üçin ol öçük galýar. Ony islendik wagt ýene açyp bilersiňiz.</string>
+    <string name="screenshot_service_notification_channel">Skrinşot gözegçisi</string>
+    <string name="screenshot_service_notification_title">Skrinşot gözegçisi açyk</string>
+    <string name="screenshot_service_notification_text">Täze skrinşotlara gözegçilik edilýär.</string>
+    <string name="screenshot_service_notification_stop">Duruz</string>
+    <string name="screenshot_bubble_content_description">Bu skrinşotdan söz goş</string>
+
+    <!-- Offline queue notification -->
+    <string name="pending_notification_channel">Düşündirilen sözler</string>
+    <string name="pending_notification_title">Söz düşündirildi</string>
+    <string name="pending_notification_text">«%1$s» sözlügiňizde taýýar.</string>
+
+    <!-- Exam setup (F-3.1) -->
+    <string name="exam_setup_title">Synag sazlamasy</string>
+    <string name="exam_setup_start">Synaga başla</string>
+    <string name="exam_setup_preparing">Taýýarlanýar…</string>
+    <string name="exam_setup_count_label">Soraglaryň sany</string>
+    <string name="exam_setup_count_all">Ählisi</string>
+    <string name="exam_setup_scope_label">Sözleriň gerimi</string>
+    <string name="exam_setup_scope_all">Ählisi</string>
+    <string name="exam_setup_scope_week">Soňky hepde</string>
+    <string name="exam_setup_scope_weak">Gowşaklar</string>
+    <string name="exam_setup_scope_due">Gaýtalamaga</string>
+    <string name="exam_setup_include_mastered">Öwrenilen sözleri goş</string>
+
+    <!-- Exam runner (F-3.3) -->
+    <string name="exam_progress">%1$d / %2$d</string>
+    <string name="exam_next">Indiki</string>
+    <string name="exam_finish_short">Gutar</string>
+    <string name="exam_finish">Synagy gutar</string>
+    <string name="exam_correct">Dogry</string>
+    <string name="exam_wrong">Nädogry</string>
+    <string name="exam_check">Barla</string>
+    <string name="exam_audio_play">Seslendir</string>
+    <string name="exam_scramble_hint">Sözi düzmek üçin harplara basyň.</string>
+    <string name="exam_scramble_clear">Arassala</string>
+    <string name="exam_empty">Synag üçin heniz söz ýok.</string>
+    <string name="exam_offline">Oflaýn synag — diňe ýerli soraglar.</string>
+    <string name="exam_exit_title">Synagdan çykylsynmy?</string>
+    <string name="exam_exit_message">Progresiňiz saklandy. Soňra dowam edip bilersiňiz.</string>
+    <string name="exam_exit_confirm">Çyk</string>
+    <string name="exam_exit_cancel">Gal</string>
+
+    <!-- Exam result (F-3.4) -->
+    <string name="exam_result_title">Synag netijesi</string>
+    <string name="exam_result_score">%1$d / %2$d (%3$d%%)</string>
+    <string name="exam_result_mistakes">Ýalňyşlar</string>
+    <string name="exam_result_no_mistakes">Ýalňyşsyz — örän gowy!</string>
+    <string name="exam_result_your_answer">Siziň jogabyňyz: %1$s</string>
+    <string name="exam_result_correct_answer">Dogry: %1$s</string>
+    <string name="exam_result_again">Ýene synag</string>
+    <string name="exam_result_home">Baş sahypa</string>
+    <string name="exam_result_done">Taýýar</string>
+
+    <!-- Open-answer exam item (F-4) -->
+    <string name="exam_open_prompt">«%1$s» sözi bilen sözlem düz.</string>
+    <string name="exam_check_failed">Jogaby barlap bolmady — birikmäňi barlaň.</string>
+    <string name="exam_skip">Ýumşy geç</string>
+    <string name="exam_open_ok">Dogry</string>
+    <string name="exam_open_minor">Dogry, kiçijik bellik bilen</string>
+    <string name="exam_open_wrong">Doly dogry däl</string>
+    <string name="exam_open_corrected">Teklip: %1$s</string>
+    <string name="exam_open_skipped">Ýumuş geçildi.</string>
+
+    <!-- Export / import (F-7) -->
+    <string name="settings_backup_section">Eksport / import</string>
+    <string name="settings_backup_summary">Sözlügiňi JSON faýla ätiýaçlan ýa-da dikelt. Kesilen suratlar goşulmaýar.</string>
+    <string name="settings_export">Maglumaty eksport et</string>
+    <string name="settings_import">Maglumaty import et</string>
+    <string name="settings_export_done">Maglumat eksport edildi.</string>
+    <string name="settings_import_report">%1$d import edildi, %2$d geçildi.</string>
+    <string name="settings_import_unsupported">Bu faýl programmanyň has täze wersiýasy bilen döredildi.</string>
+    <string name="settings_import_invalid">Bu dogry ätiýaçlyk faýly däl.</string>
+    <string name="settings_backup_error">Bir zat ýalňyş boldy.</string>
+
+    <!-- AI usage counter (§10) -->
+    <string name="settings_usage_section">AI ulanylyşy</string>
+    <string name="settings_usage_month">Şu aý</string>
+    <string name="settings_usage_total">Jemi</string>
+    <string name="settings_usage_requests">Soraglar: %1$d</string>
+    <string name="settings_usage_tokens">Tokenler: %1$d</string>
+    <string name="settings_usage_type_article">Makalalar</string>
+    <string name="settings_usage_type_quiz">Wiktorinalar</string>
+    <string name="settings_usage_type_vision">Görüş</string>
+    <string name="settings_usage_type_check">Jogap barlaglary</string>
+    <string name="settings_usage_hint">Diňe çig sanlar — bahalar üçin Anthropic nyrhlaryna serediň.</string>
+    <string name="settings_usage_reset">Sanawlary täzele</string>
+</resources>

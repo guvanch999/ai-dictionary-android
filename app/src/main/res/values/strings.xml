@@ -1,0 +1,214 @@
+<resources>
+    <string name="app_name">AI Dictionary</string>
+
+    <!-- Common actions -->
+    <string name="action_back">Back</string>
+    <string name="action_cancel">Cancel</string>
+    <string name="action_clear">Clear</string>
+    <string name="action_delete">Delete</string>
+    <string name="action_undo">Undo</string>
+    <string name="action_retry">Retry</string>
+    <string name="action_dismiss">Dismiss</string>
+    <string name="action_save">Save</string>
+
+    <!-- Languages -->
+    <string name="lang_en">English</string>
+    <string name="lang_ru">Russian</string>
+    <string name="lang_tk">Turkmen</string>
+
+    <!-- Home -->
+    <string name="home_title">My Dictionary</string>
+    <string name="home_open_settings">Settings</string>
+    <string name="home_start_exam">Start exam</string>
+    <string name="home_continue_exam">Continue exam</string>
+    <plurals name="home_words_due">
+        <item quantity="one">%1$d word due for review</item>
+        <item quantity="other">%1$d words due for review</item>
+    </plurals>
+    <string name="home_search_hint">Search or add a word</string>
+    <string name="home_ask_ai">Ask AI: \"%1$s\"</string>
+    <string name="home_sort_label">Sort</string>
+    <string name="home_sort_date">By date</string>
+    <string name="home_sort_alphabet">Alphabetical</string>
+    <string name="home_sort_weakest">Weakest first</string>
+    <string name="home_empty_title">Your dictionary is empty</string>
+    <string name="home_empty_hint">Add words you meet and don\'t know — type one above and ask AI to explain it.</string>
+    <string name="home_added_to_queue">\"%1$s\" saved — will be explained when you\'re online</string>
+    <string name="home_deleted">Deleted \"%1$s\"</string>
+
+    <!-- Dedup dialog -->
+    <string name="dedup_title">Already saved</string>
+    <string name="dedup_message">\"%1$s\" is already in your dictionary.</string>
+    <string name="dedup_open_saved">Open saved</string>
+    <string name="dedup_ask_again">Ask again as new</string>
+
+    <!-- No API key dialog -->
+    <string name="no_api_key_title">No API key</string>
+    <string name="no_api_key_message">Add your Anthropic API key in Settings to explain words with AI.</string>
+    <string name="no_api_key_open_settings">Open Settings</string>
+
+    <!-- Add error dialog -->
+    <string name="add_error_title">Could not explain the word</string>
+
+    <!-- Text-selection lookup card (F-5) -->
+    <string name="action_lookup">Explain</string>
+    <string name="lookup_loading">Looking up…</string>
+    <string name="lookup_sentence_hint">Tap a word to look it up</string>
+    <string name="lookup_open_in_app">Open in app</string>
+    <string name="lookup_close">Close</string>
+
+    <!-- Screenshot share + annotate + OCR (F-6) -->
+    <string name="annotate_hint">Draw over the word</string>
+    <string name="annotate_confirm">Look up</string>
+    <string name="annotate_back_to_editor">Back to editor</string>
+    <string name="ocr_word_picker_hint">Tap the word to look up</string>
+    <string name="word_image_thumbnail">Screenshot crop</string>
+    <string name="error_image_unsupported">Couldn\'t open this image.</string>
+    <string name="error_image_too_large">This image is too large to process.</string>
+    <string name="error_ocr_and_ai_failed">Couldn\'t read the word from the image.</string>
+
+    <!-- AI errors -->
+    <string name="error_no_api_key">No API key configured.</string>
+    <string name="error_network">Network error. Check your connection and try again.</string>
+    <string name="error_rate_limited">Too many requests. Please wait a moment and retry.</string>
+    <string name="error_invalid_key">The API key is invalid.</string>
+    <string name="error_invalid_response">The AI returned an unexpected response.</string>
+    <string name="error_unknown">Something went wrong. Please try again.</string>
+
+    <!-- Word card -->
+    <string name="word_title_fallback">Word</string>
+    <string name="word_not_found">Word not found.</string>
+    <string name="word_refresh">Refresh via AI</string>
+    <string name="word_edit">Edit</string>
+    <string name="word_delete">Delete</string>
+    <string name="word_explanation_label">Explanation</string>
+    <string name="word_translations_label">Translations</string>
+    <string name="word_examples_label">Examples</string>
+    <string name="word_synonyms_label">Synonyms</string>
+    <string name="word_common_mistake_label">Common mistake</string>
+    <string name="word_context_label">Context</string>
+    <string name="word_delete_confirm_title">Delete this word?</string>
+    <string name="word_delete_confirm_message">This removes the word from your dictionary.</string>
+    <string name="word_edit_title">Edit word</string>
+    <string name="word_edit_explanation">Explanation (English)</string>
+    <string name="word_edit_translation_ru">Russian translation</string>
+    <string name="word_edit_translation_tk">Turkmen translation</string>
+    <string name="word_speak_term">Pronounce word</string>
+    <string name="word_speak_example">Pronounce example</string>
+
+    <!-- Settings -->
+    <string name="settings_title">Settings</string>
+    <string name="settings_api_key_label">Anthropic API key</string>
+    <string name="settings_api_key_show">Show</string>
+    <string name="settings_api_key_hide">Hide</string>
+    <string name="settings_check_key">Check</string>
+    <string name="settings_check_ok">Key works</string>
+    <string name="settings_native_lang_label">Native language (shown first)</string>
+    <string name="settings_interface_lang">Interface language</string>
+    <string name="settings_interface_lang_system">System default</string>
+
+    <!-- Screenshot watcher (F-6, task 10) -->
+    <string name="settings_screenshot_watcher_title">Screenshot watcher</string>
+    <string name="settings_screenshot_watcher_summary">Show a pencil bubble after you take a screenshot, so you can add a word from it.</string>
+    <string name="screenshot_onboarding_intro_title">Screenshot watcher</string>
+    <string name="screenshot_onboarding_intro_message">When you take a screenshot in any app, a small pencil bubble appears. Tap it to circle a word and add it to your dictionary. This needs a few permissions on the next screens.</string>
+    <string name="screenshot_onboarding_continue">Continue</string>
+    <string name="screenshot_onboarding_cancel">Cancel</string>
+    <string name="screenshot_perm_media_rationale_title">Access to screenshots</string>
+    <string name="screenshot_perm_media_rationale_message">The watcher needs to read your photos to detect new screenshots. Please allow access to all photos.</string>
+    <string name="screenshot_perm_media_partial_title">Full access needed</string>
+    <string name="screenshot_perm_media_partial_message">You granted access to selected photos only. The watcher can\'t detect new screenshots that way — please allow access to all photos, or the feature stays off.</string>
+    <string name="screenshot_perm_overlay_rationale_title">Draw over other apps</string>
+    <string name="screenshot_perm_overlay_rationale_message">To float the pencil bubble over other apps, allow \"Display over other apps\" on the next screen.</string>
+    <string name="screenshot_perm_overlay_open_settings">Open settings</string>
+    <string name="screenshot_perm_notifications_rationale_title">Show a notification</string>
+    <string name="screenshot_perm_notifications_rationale_message">The watcher runs as a foreground service and needs to show an ongoing notification. Please allow notifications.</string>
+    <string name="screenshot_perm_denied_title">Permission needed</string>
+    <string name="screenshot_perm_denied_message">The screenshot watcher can\'t work without this permission, so it stays off. You can enable it again anytime.</string>
+    <string name="screenshot_service_notification_channel">Screenshot watcher</string>
+    <string name="screenshot_service_notification_title">Screenshot watcher is on</string>
+    <string name="screenshot_service_notification_text">Watching for new screenshots.</string>
+    <string name="screenshot_service_notification_stop">Stop</string>
+    <string name="screenshot_bubble_content_description">Add a word from this screenshot</string>
+
+    <!-- Offline queue notification -->
+    <string name="pending_notification_channel">Explained words</string>
+    <string name="pending_notification_title">Word explained</string>
+    <string name="pending_notification_text">\"%1$s\" is ready in your dictionary.</string>
+
+    <!-- Exam setup (F-3.1) -->
+    <string name="exam_setup_title">Exam setup</string>
+    <string name="exam_setup_start">Begin exam</string>
+    <string name="exam_setup_preparing">Preparing…</string>
+    <string name="exam_setup_count_label">Number of questions</string>
+    <string name="exam_setup_count_all">All</string>
+    <string name="exam_setup_scope_label">Word coverage</string>
+    <string name="exam_setup_scope_all">All</string>
+    <string name="exam_setup_scope_week">Last week</string>
+    <string name="exam_setup_scope_weak">Weak</string>
+    <string name="exam_setup_scope_due">Due for review</string>
+    <string name="exam_setup_include_mastered">Include mastered words</string>
+
+    <!-- Exam runner (F-3.3) -->
+    <string name="exam_progress">%1$d of %2$d</string>
+    <string name="exam_next">Next</string>
+    <string name="exam_finish_short">Finish</string>
+    <string name="exam_finish">Finish exam</string>
+    <string name="exam_correct">Correct</string>
+    <string name="exam_wrong">Incorrect</string>
+    <string name="exam_check">Check</string>
+    <string name="exam_audio_play">Play</string>
+    <string name="exam_scramble_hint">Tap the letters to spell the word.</string>
+    <string name="exam_scramble_clear">Clear</string>
+    <string name="exam_empty">No words are available for an exam yet.</string>
+    <string name="exam_offline">Offline exam — local questions only.</string>
+    <string name="exam_exit_title">Leave exam?</string>
+    <string name="exam_exit_message">Your progress is saved. You can continue later.</string>
+    <string name="exam_exit_confirm">Leave</string>
+    <string name="exam_exit_cancel">Stay</string>
+
+    <!-- Exam result (F-3.4) -->
+    <string name="exam_result_title">Exam result</string>
+    <string name="exam_result_score">%1$d / %2$d (%3$d%%)</string>
+    <string name="exam_result_mistakes">Mistakes</string>
+    <string name="exam_result_no_mistakes">No mistakes — great job!</string>
+    <string name="exam_result_your_answer">Your answer: %1$s</string>
+    <string name="exam_result_correct_answer">Correct: %1$s</string>
+    <string name="exam_result_again">Another exam</string>
+    <string name="exam_result_home">Home</string>
+    <string name="exam_result_done">Done</string>
+
+    <!-- Open-answer exam item (F-4) -->
+    <string name="exam_open_prompt">Write a sentence with the word \"%1$s\".</string>
+    <string name="exam_check_failed">Couldn\'t check your answer — check your connection.</string>
+    <string name="exam_skip">Skip question</string>
+    <string name="exam_open_ok">Correct</string>
+    <string name="exam_open_minor">Correct, with a small note</string>
+    <string name="exam_open_wrong">Not quite</string>
+    <string name="exam_open_corrected">Suggested: %1$s</string>
+    <string name="exam_open_skipped">Question skipped.</string>
+
+    <!-- Export / import (F-7) -->
+    <string name="settings_backup_section">Export / import</string>
+    <string name="settings_backup_summary">Back up your dictionary to a JSON file, or restore it. Image crops are not included.</string>
+    <string name="settings_export">Export data</string>
+    <string name="settings_import">Import data</string>
+    <string name="settings_export_done">Data exported.</string>
+    <string name="settings_import_report">Imported %1$d, skipped %2$d.</string>
+    <string name="settings_import_unsupported">This file was made by a newer app version.</string>
+    <string name="settings_import_invalid">This file is not a valid backup.</string>
+    <string name="settings_backup_error">Something went wrong.</string>
+
+    <!-- AI usage counter (§10) -->
+    <string name="settings_usage_section">AI usage</string>
+    <string name="settings_usage_month">This month</string>
+    <string name="settings_usage_total">All time</string>
+    <string name="settings_usage_requests">Requests: %1$d</string>
+    <string name="settings_usage_tokens">Tokens: %1$d</string>
+    <string name="settings_usage_type_article">Articles</string>
+    <string name="settings_usage_type_quiz">Quizzes</string>
+    <string name="settings_usage_type_vision">Vision</string>
+    <string name="settings_usage_type_check">Answer checks</string>
+    <string name="settings_usage_hint">Raw counts only — see Anthropic pricing for costs.</string>
+    <string name="settings_usage_reset">Reset counters</string>
+</resources>
